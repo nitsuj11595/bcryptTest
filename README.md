@@ -1,6 +1,12 @@
 Quick implementation of BCrypt in Java and Javascript
 
-Compile with maven
+## Javascript ##
+See js/index.html
+
+## Java ##
+Compile and package into a runnable jar with maven
 ```
-mvn -q compile
+mvn -q package
 ```
+
+
