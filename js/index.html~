@@ -1,0 +1,23 @@
+<html>
+
+    <script src="bcrypt/prng/accum.js"> </script>
+    <script src="bcrypt/prng/isaac.js"> </script>
+    <script src="bcrypt/util/base64.js"> </script>
+    <script src="bcrypt/util/utf8.js"> </script>
+    <script src="bcrypt/impl.js"> </script>
+    <script src="bcrypt/util.js"> </script>
+    <script src="bcrypt.js"> </script>
+    <script src="wrap.js"> </script>
+    <script>
+     function salthash(password){
+	 var salt = bcrypt.genSaltSync();
+	 console.log(salt);
+	 console.log(bcrypt.hashSync(password,salt));
+
+     }
+    </script>
+    <form action="javascript:(function(){})" onsubmit="salthash(document.getElementById('password').value)">
+	<input id="password" type="text"/>
+	<input type="submit"/>
+    </form>
+</html>
