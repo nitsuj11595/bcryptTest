@@ -19,6 +19,7 @@ public class Generate {
 	String salt = args.length == 2 ? args[1] : BCrypt.gensalt();
 	//Print the salted hash string
 	System.out.println(BCrypt.hashpw(args[0], salt));
+	//This string should be stored in the Database!!!
     }
 
 }
